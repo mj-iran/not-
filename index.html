@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta http-equiv="Content-Security-Policy" content="default-src * self blob: data: gap:; style-src * self 'unsafe-inline' blob: data: gap:; script-src * 'self' 'unsafe-eval' 'unsafe-inline' blob: data: gap:; object-src * 'self' blob: data: gap:; img-src * self 'unsafe-inline' blob: data: gap:; connect-src self * 'unsafe-inline' blob: data: gap:; frame-src * self blob: data: gap:;">
+  <!-- Bootstrap CSS -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <link href="style/style.css" rel="stylesheet">
+  <title>notes</title>
+</head>
+<body class="container  body-whit" onkeydown="return add_box_in_enter(event)">
+  <div class="w-100 h-100 d-flex justify-content-center align-items-center">
+    <div class=" w-100 h-75">
+      <div class=" row">
+        <!-- ---------------text header-------------------- -->
+        <div class="col-12 mt-3 text" id="text_heder" >
+          <h1 class=" text-center text-uppercase display-5 font-weight-bold">Notes</h1>
+        </div>
+        <!-- ----------------text header--------------- ///-->
+        <!-- ----------------------form not------------------------ -->
+        <div class="my-5">
+          <form action="" class=" d-flex justify-content-center">
+            <input class="form_input_text col-8 col-lg-5 mr-4 p-2" id="input"
+            name="text" placeholder="یادداشت چی کلک؟" type="text">
+            <input class="form_button px-3" id="add" onclick="add_not()"
+            type="button" value="+">
+          </form>
+        </div>
+        <!-- ----------------------form not------------------------ -->
+      </div>
+      <!-- ------------------------not's box ----------------- -->
+      <div class=" row" id="not">
+        </div>
+      <!-- ------------------------not's box -----------------/// -->
+      </div>
+    </div>
+  </div>
+  <!-- -----------------------setting------------------------------------------------ -->
+  <!-- Button trigger modal -->
+
+
+  <div class="modals">
+    <!-- -----------------------btn setting-------------- -->
+    <div class=" btn_setting">
+      <button class="btn btn-modal-bg btn-lg btn_i" data-target="#modelId" data-toggle= "modal" type="button">
+        <img src="https://img.icons8.com/color/25/000000/settings--v1.png"></button>
+    </div>
+    <!-- -----------------------btn setting--------------//// -->
+
+    <!-- Modal -->
+
+
+    <div aria-hidden="true" aria-labelledby="modelTitleId" class="modal fade"id="modelId" role="dialog" tabindex="-1">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Settings</h5>
+            <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+          </div>
+
+
+          <div class="modal-body">
+            <!-- --------------- theme color--------------- -->
+            <div class="theme_notes pb-4">
+              <h2 class=" text-center pb-3 text_title">theme notes</h2>
+
+
+              <div class="row d-flex justify-content-center">
+                <div class=" col-2">
+                  <button class="btn bg-modal-blacks btn_color_modal_them" onclick="them_ching(this)"data-them='dark_them' ></button>
+                </div>
+
+                <div class=" col-2">
+                  <button class="btn bg-modal-whits btn_color_modal_them" onclick="them_ching(this)"data-them='whit_them' ></button>
+                </div>
+
+                <div class=" col-2">
+                  <button class="btn bg-modal-greens btn_color_modal_them" onclick="them_ching(this)"data-them='green_them' ></button>
+                </div>
+
+              </div>
+            </div>
+            <!-- -------------- theme color-----------------////-- -->
+
+            <hr>
+            <!-- --------------- theme text size-----------------> 
+            <div class="size_text my-2">
+
+              <h2 class=" text-center pb-3 text_title">size text notes</h2>
+
+              <div class="row d-flex justify-content-around text-center">
+                
+                <div class=" col-2">
+                  
+                  <h5 class="text_font_set" onclick="text_size(event)" >long</h5>
+                </div>
+
+                <div class=" col-2 d-flex align-items-center">
+                  <h6 class="text_font_set" onclick="text_size(event)" >medium</h6>
+                </div>
+
+                <div class=" col-2 mt-2">
+                  <p  class="text_font_set " onclick="text_size(event)" >smile</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- ----------- theme text size---------------///--> 
+          
+          </div>
+          <hr>
+          <div class="modal-footer">
+            <button class="btn btn-save" type="button" data-dismiss="modal" ><img src=
+            "https://img.icons8.com/color/25/000000/save--v2.png"></button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  <!-- -----------------------setting--------------------------------------------------///-- -->
+
+  </div>
+
+  
+
+  <!-- Optional JavaScript -->
+  <!-- Popper.js first, then Bootstrap JS -->
+  <script src="script/script.js">
+  </script> 
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</body>
+</html>
+

@@ -1,0 +1,395 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+  
+}
+
+:root{
+  
+    --bg-whit:linear-gradient(72deg, rgba(79,153,196,1) 35%, rgba(127,143,186,1) 100%);
+    --bg-dark-1:rgb(211,189,236);
+    --bg-dark:linear-gradient(90deg, rgba(211,189,236,1) 0%, rgba(232,195,229,0.9672911400888481) 63%, rgba(195,172,240,1) 100%);
+   
+    --bg-green:linear-gradient(to right, #93EDC7, #1CD8D2);
+    --shadow : rgba(0, 0, 0, 0.582) 0px 2px 4px;
+    --shadow-hover: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+
+}
+
+
+body
+{
+    width: 100vh;
+    height: 100vh;
+}
+
+
+/* ----------------------تم ها ------------------- */
+
+/* -----------color active--------- */
+.white
+{
+    background: var(--bg-whit);
+   
+       
+       
+    box-shadow:  var(--shadow);
+}
+
+.dark{
+ 
+    background: var(--bg-dark);
+    
+}
+.greene
+{
+    
+    background: var(--bg-green);
+    box-shadow:  var(--shadow);
+}
+
+.white:hover,.greene:hover{
+    box-shadow:var(--shadow-hover) ;
+}
+
+/* -----------color active-------///-- */
+
+/* ----------background color -------- */
+.body-whit
+{
+    background:#d7f8e88c;
+}
+
+.body-dark
+{
+    background:#363a40;
+}
+.body-green
+{
+    background: #00C9FF; 
+    background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF); 
+    background: linear-gradient(to right, #92FE9D, #00C9FF);
+}
+/* ----------background color -------///- */
+
+
+/* ------------text header ----------- */
+.heder_green
+{
+color: rgb(147, 161, 161);
+letter-spacing: 10px;
+}
+
+.heder_dark
+{
+    color: var(--bg-dark-1);
+    letter-spacing: 10px;
+}
+.heder_whit
+{
+    color:rgb(180, 182, 182);
+    letter-spacing: 10px;
+}
+/* ------------text header ---------// */
+
+/* ------------form not ------------ */
+.form_dark
+{
+  
+    background: var(--bg-dark);
+    
+}   
+
+.form_green
+{
+    box-shadow:  var(--shadow);
+    background-color: azure;
+}
+/* ------------form not ------------/// */
+
+
+/* --------------background box not------*/
+.bg-whit
+{
+    background-color: #e6e6e65b;
+    box-shadow: var(--shadow)
+}
+
+.bg-darks
+{
+    background-color: #c2c2c2; 
+    
+}
+
+.bg-green
+{
+    background: #eef2f5;
+    box-shadow:  var(--shadow)
+
+}
+
+
+.bg-whit:hover
+{
+    background: var(--bg-whit); 
+    border-radius: 20px 20px 35px 20px;
+    box-shadow:var(--shadow-hover) ;
+    
+}
+
+
+.bg-darks:hover
+{
+    background:var(--bg-dark);
+    box-shadow:var(--shadow-hover) ;
+}
+
+.bg-green:hover
+{
+  
+    background: var(--bg-green-1) ;
+    background:  var(--bg-green-2);
+    box-shadow:var(--shadow-hover) ;
+    border-radius: 20px 20px 30px 20px;
+    
+}
+/* --------------background box not------// */
+
+
+
+/* ---------------text----------------------- */
+.text-green{
+ color:#8f8f8f
+}
+.text-whites
+{
+    color: #b3c455b7;
+}
+.text-darks
+{
+     color:rgb(224, 245, 245);
+    
+}
+/* ---------------text----------------------/// */
+
+
+/* -------------------------تم ها ---------------------///--- */
+
+
+.box_not
+{
+    position: relative;
+    overflow:hidden;
+} 
+
+
+.form_input_text,.form_button,.box_not
+{
+    
+    
+    border-radius: 15px;
+    border: none;
+    outline: 0;
+    transition: all ease 0.7s;
+}
+
+/* -------------form_button----------- */
+.form_button:hover
+{
+    border-radius: 47px 47px 120px 47px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+/* -------------form_button----------/// */
+
+/* ---------------form_input_text-------- */
+.form_input_text:focus,.form_input_text:hover
+{
+    border-radius: 18px 18px 40px 18px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 3.4px 4.2px;
+}
+/* ---------------form_input_text--------/// */
+
+/* ----------button remove not box---------- */
+.remove{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    height: 10px;
+    width: 10px;
+    cursor: pointer;
+}
+
+.remove h6{
+    color: rgba(81, 91, 99, 0.233);
+    font-size: 13px;
+    transition:font-size 0.5s ease ;
+}
+.remove h6:hover{
+    color: rgba(81, 91, 99, 0.452);
+    font-size: 15px;
+}
+/* ----------button remove not box--------///-- */
+
+/* --------------text not box----------------- */
+.box_text{
+    margin-top:15px;
+    word-wrap: break-word;
+}
+/* --------------text not box--------------/// */
+
+/* ------------------------- modal ----------------------------- */
+.modal-content
+{
+    background: linear-gradient(to right bottom,rgba(255, 255, 255, 0.76),rgba(255, 255, 255, 0.726));
+    border-radius: 20px;
+}
+
+.modal-header,.modal-footer
+{
+    border: none;
+}
+
+.btn_setting
+{
+
+    z-index: 3;
+    position: fixed;
+    top: 90%;
+    right: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+.btn-modal-bg ,.btn-save
+{
+    
+  
+    border-radius: 50px;
+    background-color: rgba(240, 248, 255, 0.205);
+    border-radius: 10px;
+}
+
+.btn-modal-bg img{
+    
+    font-size: 20px;
+    animation:btn 4s ease-in-out infinite ;
+}
+
+.btn-modal-bg:hover ,.btn-save:hover
+
+{
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    background-color: rgba(240, 248, 255, 0.5);
+}
+
+
+@keyframes btn {
+    0%
+    {
+        transform:rotate(0deg)
+    }
+    50%
+    {
+        transform:rotate(-90deg)
+    }
+    100%
+    {
+        transform:rotate(180deg)
+    }
+
+}
+
+
+
+/* -------btn_color_modal_them-------- */
+.btn_color_modal_them
+{
+    width: 70%;
+    height: 150%;
+    border-radius: 100%;
+}
+/* -------btn_color_modal_them------///- */
+
+/* ----------text _modal_them -------- */
+.text_not
+{
+    cursor:default ;
+}
+/* --------text _modal_them ------/// */
+
+
+/* ---------------------------- them----------------- */
+
+
+/* -------------color them--------------- */
+
+.bg-modal-blacks
+{
+    background-color: rgba(8, 7, 7, 0.856);
+    
+    box-shadow: rgba(12, 10, 10, 0.452) 0 0 5.2px 3px;
+}
+
+.bg-modal-blacks:hover
+{
+    box-shadow: rgba(12, 10, 10, 0.452) 0 0 10.2px 5px;
+
+}
+
+.bg-modal-whits
+{
+    background-color: rgba(239, 240, 240, 0.733);
+    box-shadow: rgba(204, 200, 200, 0.801) 0 0 2.2px 5px;
+}
+
+.bg-modal-whits:hover
+{
+    box-shadow: rgb(204, 200, 200) 0 0 5px 6px;
+}
+
+.bg-modal-greens
+{
+    background: #1CD8D2; 
+    background: -webkit-linear-gradient(to right, #93EDC7, #1CD8D2);  
+    background: linear-gradient(to right, #93EDC7, #1CD8D2);
+    box-shadow: rgba(73, 243, 235, 0.39) 0 0 2px 5px;
+
+}
+
+.bg-modal-greens:hover
+{
+
+    box-shadow: rgba(73, 243, 235, 0.39) 0 0 8px 8px;
+}
+/* -------------color them-------------/// */
+
+/* ----------------text size------------- */
+
+.text_title
+{
+    color: rgb(68, 78, 87);
+}
+
+.text_font_set
+{
+    cursor:pointer ;
+    color: rgb(105, 105, 105);
+    text-decoration: underline;
+}
+
+/* --------------text size---------///- */
+
+/* ---------------------------- them----------------- */
+
+/* ------------------------- modal --------------------------///- */
+
+
+
+
+
